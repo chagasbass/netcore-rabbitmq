@@ -1,0 +1,26 @@
+criando imagem do rabbit
+
+ docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3
+
+onde 'some-rabbit' é o nome da imagem do rabbit
+
+
+docker logs 'nome-do-rabbit'
+para verificar se o rabbit ja esta rodando
+
+
+INSTALANDO OS PLUGINS 
+-> o plugin provê uma api para acesso ao rabbit
+
+docker run -d --hostname my-rabbit-mg --name some-rabbit-mg rabbitmq:3-management
+
+
+ACESSO NO BROWSER
+
+http://ip-container:15672
+
+URL
+
+localhost:15672
+senha:guest
+pass:guest
