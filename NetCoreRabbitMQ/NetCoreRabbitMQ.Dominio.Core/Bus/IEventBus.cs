@@ -1,8 +1,8 @@
-﻿using NetCoreRabbitMQ.Dominio.Core.Comands;
-using NetCoreRabbitMQ.Dominio.Core.Events;
+﻿using NetCoreRabbitMQ.Domain.Core.Comands;
+using NetCoreRabbitMQ.Domain.Core.Events;
 using System.Threading.Tasks;
 
-namespace NetCoreRabbitMQ.Dominio.Core.Bus
+namespace NetCoreRabbitMQ.Domain.Core.Bus
 {
     public interface IEventBus
     {

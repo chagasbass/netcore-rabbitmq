@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NetCoreRabbitMQ.Dominio.Core.Events
+namespace NetCoreRabbitMQ.Domain.Core.Events
 {
     public abstract class Event
     {

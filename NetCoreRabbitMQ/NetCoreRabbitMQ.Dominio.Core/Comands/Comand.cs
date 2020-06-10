@@ -1,7 +1,7 @@
-﻿using NetCoreRabbitMQ.Dominio.Core.Events;
+﻿using NetCoreRabbitMQ.Domain.Core.Events;
 using System;
 
-namespace NetCoreRabbitMQ.Dominio.Core.Comands
+namespace NetCoreRabbitMQ.Domain.Core.Comands
 {
     public abstract class Comand:Message
     {

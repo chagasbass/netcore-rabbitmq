@@ -1,7 +1,7 @@
-﻿using NetCoreRabbitMQ.Dominio.Core.Events;
+﻿using NetCoreRabbitMQ.Domain.Core.Events;
 using System.Threading.Tasks;
 
-namespace NetCoreRabbitMQ.Dominio.Core.Bus
+namespace NetCoreRabbitMQ.Domain.Core.Bus
 {
     /// <summary>
     /// interface de eventos genericos
