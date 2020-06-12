@@ -3,9 +3,12 @@ using System;
 
 namespace NetCoreRabbitMQ.Domain.Core.Comands
 {
-    public abstract class Comand:Message
+    /// <summary>
+    /// Entidade base para os comandos
+    /// </summary>
+    public abstract class Comand : Message
     {
-        public DateTime   Timestamp { get; protected set; }
+        public DateTime Timestamp { get; protected set; }
 
         protected Comand()
             => Timestamp = DateTime.Now;
