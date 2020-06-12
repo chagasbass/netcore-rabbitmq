@@ -118,11 +118,34 @@ namespace NetCoreRabbitMQ.Infrastructure.Bus.Bus
 
             try
             {
-               // await ProcessEvent(eventName, message).ConfigureAwait(false);
+               await ProcessEvent(eventName, message).ConfigureAwait(false);
             }
             catch (Exception ex)
             {
             }
         }
+
+        private async Task ProcessEvent(string eventName,string message)
+        {
+            if(_handlers.ContainsKey(eventName))
+            {
+                var subscriptions = _handlers[eventName];
+
+                foreach (var subscription in subscriptions)
+                {
+                    var handler = Activator.CreateInstance(subscription);
+
+                    if (handler == null) continue;
+
+                    var eventType = _eventTypes.SingleOrDefault(t => t.Name.Equals(eventName));
+                    var @event = JsonSerializer.Deserialize(message, eventType);
+                    var concreteType = typeof(IEventHandler).MakeGenericType(eventType);
+
+                    await (Task)concreteType.GetMethod("Handle").Invoke(handler, new object[] { @event });
+                }
+            }
+        }
+
+
     }
 }
