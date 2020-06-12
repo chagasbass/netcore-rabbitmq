@@ -1,2 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NetCoreRabbitMQ.Infrastructure.Bus.Bus.RabbitMQBus">
+    <Position X="0.75" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAABIAAAAEAEAAAAAEEAAAAAAAACAAAACAAAACAAAAA=</HashCode>
+      <FileName>Bus\RabbitMQBus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NetCoreRabbitMQ.Infrastructure.Bus.Configurations.QueueConfiguration">
+    <Position X="5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAIAAAAAQAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\QueueConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
