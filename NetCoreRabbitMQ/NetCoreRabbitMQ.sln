@@ -9,11 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrasctruture", "Infrasctr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{0AA62926-76E8-4DB2-8BC5-E1211EEBBC5A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreRabbitMQ.Domain.Core", "NetCoreRabbitMQ.Dominio.Core\NetCoreRabbitMQ.Domain.Core.csproj", "{999EC18B-9A22-4728-B8DB-C5A12AA9977E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreRabbitMQ.Dominio.Core", "NetCoreRabbitMQ.Dominio.Core\NetCoreRabbitMQ.Dominio.Core.csproj", "{999EC18B-9A22-4728-B8DB-C5A12AA9977E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreRabbitMQ.Infrastructure.Bus", "NetCoreRabbitMQ.Infrastructure.Bus\NetCoreRabbitMQ.Infrastructure.Bus.csproj", "{B6C39776-39C3-4564-A223-2E8E3F0FA83B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreRabbitMQ.Infrasestrutura.Fila", "NetCoreRabbitMQ.Infrastructure.Bus\NetCoreRabbitMQ.Infrasestrutura.Fila.csproj", "{B6C39776-39C3-4564-A223-2E8E3F0FA83B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreRabbitMQ.Infrastructure.IoC", "NetCoreRabbitMQ.Infrastructure.IoC\NetCoreRabbitMQ.Infrastructure.IoC.csproj", "{C09F7891-0DC0-4287-9542-D2E62F131995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreRabbitMQ.Infraestrutura.IoC", "NetCoreRabbitMQ.Infrastructure.IoC\NetCoreRabbitMQ.Infraestrutura.IoC.csproj", "{C09F7891-0DC0-4287-9542-D2E62F131995}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

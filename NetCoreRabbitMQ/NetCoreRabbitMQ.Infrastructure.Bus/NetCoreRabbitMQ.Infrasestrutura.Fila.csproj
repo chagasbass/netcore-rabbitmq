@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreRabbitMQ.Dominio.Core\NetCoreRabbitMQ.Domain.Core.csproj" />
+    <ProjectReference Include="..\NetCoreRabbitMQ.Dominio.Core\NetCoreRabbitMQ.Dominio.Core.csproj" />
   </ItemGroup>
 
 </Project>

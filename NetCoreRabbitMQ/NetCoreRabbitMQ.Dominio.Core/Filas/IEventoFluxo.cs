@@ -1,4 +1,4 @@
-﻿using NetCoreRabbitMQ.Domain.Core.Events;
+﻿using NetCoreRabbitMQ.Dominio.Core.Eventos;
 using System.Threading.Tasks;
 
 namespace NetCoreRabbitMQ.Domain.Core.Bus
@@ -8,15 +8,15 @@ namespace NetCoreRabbitMQ.Domain.Core.Bus
     /// Recebe qualquer tipo de evento
     /// </summary>
     /// <typeparam name=""></typeparam>
-    public interface IEventHandler<in TEvent> : IEventHandler where TEvent : Event
+    public interface IEventoFluxo<in TEvent> : IEventoFluxo where TEvent : Evento
     {
-        Task Handle(TEvent @event);
+        Task ExecutarFluxo(TEvent evento);
     }
 
     /// <summary>
     /// contrato vazio
     /// </summary>
-    public interface IEventHandler
+    public interface IEventoFluxo
     {
 
     }
