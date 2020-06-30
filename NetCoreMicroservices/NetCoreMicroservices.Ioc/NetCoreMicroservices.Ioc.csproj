@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -6,10 +6,14 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="8.0.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreMicroservices.Compartilhados\NetCoreMicroservices.Compartilhados.csproj" />
+    <ProjectReference Include="..\NetCoreMicroservices.Banco.Aplicacao\NetCoreMicroservices.Banco.Aplicacao.csproj" />
+    <ProjectReference Include="..\NetCoreMicroservices.Banco.Data\NetCoreMicroservices.Banco.Data.csproj" />
+    <ProjectReference Include="..\NetCoreMicroservices.Banco.Dominio\NetCoreMicroservices.Banco.Dominio.csproj" />
   </ItemGroup>
 
   <ItemGroup>

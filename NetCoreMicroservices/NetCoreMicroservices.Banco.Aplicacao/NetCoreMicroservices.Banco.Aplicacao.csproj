@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreMicroservices.Banco.Dominio\NetCoreMicroservices.Banco.Dominio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NetCoreRabbitMQ.Dominio.Core">
+      <HintPath>..\..\NetCoreRabbitMQ\NetCoreRabbitMQ.Infrastructure.Bus\bin\Debug\netcoreapp3.1\NetCoreRabbitMQ.Dominio.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

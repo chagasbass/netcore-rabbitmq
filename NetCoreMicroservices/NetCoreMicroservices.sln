@@ -11,13 +11,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aplicacao", "Aplicacao", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{4024700F-A647-4950-9FE8-E00D648D8570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMicroservices.Banco.Api", "NetCoreMicroservices.Banco.Api\NetCoreMicroservices.Banco.Api.csproj", "{D0DA059D-B4F4-4D7F-8D8F-97835C98CB1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreMicroservices.Banco.Api", "NetCoreMicroservices.Banco.Api\NetCoreMicroservices.Banco.Api.csproj", "{D0DA059D-B4F4-4D7F-8D8F-97835C98CB1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMicroservices.Banco.Aplicacao", "NetCoreMicroservices.Banco.Aplicacao\NetCoreMicroservices.Banco.Aplicacao.csproj", "{D947EE09-2673-4FBA-8772-4F1ADCFF2B79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreMicroservices.Banco.Aplicacao", "NetCoreMicroservices.Banco.Aplicacao\NetCoreMicroservices.Banco.Aplicacao.csproj", "{D947EE09-2673-4FBA-8772-4F1ADCFF2B79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMicroservices.Banco.Data", "NetCoreMicroservices.Banco.Data\NetCoreMicroservices.Banco.Data.csproj", "{D1C7AD30-7FDC-45BF-90A3-F2AF09917837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreMicroservices.Banco.Data", "NetCoreMicroservices.Banco.Data\NetCoreMicroservices.Banco.Data.csproj", "{D1C7AD30-7FDC-45BF-90A3-F2AF09917837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMicroservices.Banco.Dominio", "NetCoreMicroservices.Banco.Dominio\NetCoreMicroservices.Banco.Dominio.csproj", "{73B703AC-2773-4D57-B301-F0CE3C20AB33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreMicroservices.Banco.Dominio", "NetCoreMicroservices.Banco.Dominio\NetCoreMicroservices.Banco.Dominio.csproj", "{73B703AC-2773-4D57-B301-F0CE3C20AB33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compartilhados", "Compartilhados", "{9B95A0E3-2ECE-4E8D-9750-CC0116855A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMicroservices.Compartilhados", "NetCoreMicroservices.Compartilhados\NetCoreMicroservices.Compartilhados.csproj", "{951ABA41-CA3B-4F56-9857-0D38F138F4F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ioc", "Ioc", "{6A1B6AAB-B704-41B2-AC12-BC85FA45F305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMicroservices.Ioc", "NetCoreMicroservices.Ioc\NetCoreMicroservices.Ioc.csproj", "{0D94A951-D85D-40CF-B99E-844C6B5EF9EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +49,14 @@ Global
 		{73B703AC-2773-4D57-B301-F0CE3C20AB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73B703AC-2773-4D57-B301-F0CE3C20AB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73B703AC-2773-4D57-B301-F0CE3C20AB33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{951ABA41-CA3B-4F56-9857-0D38F138F4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{951ABA41-CA3B-4F56-9857-0D38F138F4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{951ABA41-CA3B-4F56-9857-0D38F138F4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{951ABA41-CA3B-4F56-9857-0D38F138F4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D94A951-D85D-40CF-B99E-844C6B5EF9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D94A951-D85D-40CF-B99E-844C6B5EF9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D94A951-D85D-40CF-B99E-844C6B5EF9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D94A951-D85D-40CF-B99E-844C6B5EF9EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +66,8 @@ Global
 		{D947EE09-2673-4FBA-8772-4F1ADCFF2B79} = {479E75C4-047C-4998-80C4-90CC5CBE175F}
 		{D1C7AD30-7FDC-45BF-90A3-F2AF09917837} = {4024700F-A647-4950-9FE8-E00D648D8570}
 		{73B703AC-2773-4D57-B301-F0CE3C20AB33} = {1CFC9DC2-2D43-4E2C-B302-802BC485AC59}
+		{951ABA41-CA3B-4F56-9857-0D38F138F4F0} = {9B95A0E3-2ECE-4E8D-9750-CC0116855A78}
+		{0D94A951-D85D-40CF-B99E-844C6B5EF9EF} = {6A1B6AAB-B704-41B2-AC12-BC85FA45F305}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1F12A07-97F9-458B-9331-644DE21CB651}
